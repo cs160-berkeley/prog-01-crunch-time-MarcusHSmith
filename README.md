@@ -30,11 +30,14 @@ Marcus Smith ([m.smith@berkeley.edu](mailto:m.smith@berkeley.edu))
 
 ## Demo Video
 
-See [your demo video title here] (https://link_to_your_video)
+See [The Athletic Android] (https://youtu.be/IJaXAElpKkM)
 
 ## Screenshots
 
-<img src="screenshots/main.png" height="400" alt="Screenshot"/>
+<img src="screenshots/1.png" height="400" alt="Screenshot"/>
+<img src="screenshots/2.png" height="400" alt="Screenshot"/>
+<img src="screenshots/3.png" height="400" alt="Screenshot"/>
+<img src="screenshots/4.png" height="400" alt="Screenshot"/>
 
 ## Acknowledgments
 
