@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TheAthleticAndroid</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="workouts_array">
+        <item>Run</item>
+        <item>Pushup</item>
+        <item>Situp</item>
+    </string-array>
+</resources>

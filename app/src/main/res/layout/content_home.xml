@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.marcus.theathleticandroid.HomeActivity"
+    tools:showIn="@layout/activity_home">
+
+    <EditText
+        android:layout_width="@dimen/box_size_width"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editTextCount"
+        android:hint="How much?"
+        android:textAlignment="center"
+        android:layout_below="@+id/buttonJogging"
+        android:layout_toLeftOf="@+id/buttonPlank"
+        android:layout_toStartOf="@+id/buttonPlank"
+        android:onClick="onWorkoutButtonClick" />
+
+    <TextView
+        android:layout_width="@dimen/box_size_width"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="min/reps"
+        android:id="@+id/textViewRepsMin"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/editTextCount"
+        android:textAlignment="center" />
+
+    <Button
+        android:layout_width="@dimen/box_size_width"
+        android:layout_height="@dimen/box_size_hieght"
+        android:text="\n\nPushup"
+        android:id="@+id/buttonPushup"
+        android:onClick="onWorkoutButtonClick"
+        android:layout_below="@+id/buttonPlank"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <Button
+        android:layout_width="@dimen/box_size_width"
+        android:layout_height="@dimen/box_size_hieght"
+        android:text="\n\nSitup"
+        android:id="@+id/buttonSitup"
+        android:onClick="onWorkoutButtonClick"
+        android:layout_below="@+id/buttonPullup" />
+
+    <Button
+        android:layout_width="@dimen/box_size_width"
+        android:layout_height="@dimen/box_size_hieght"
+        android:text="\n\nSquat"
+        android:id="@+id/buttonSquat"
+        android:onClick="onWorkoutButtonClick"
+        android:layout_below="@+id/buttonPushup"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="@dimen/box_size_width"
+        android:layout_height="@dimen/box_size_hieght"
+        android:text="\n\nLeg-Lift"
+        android:id="@+id/buttonLegLift"
+        android:onClick="onWorkoutButtonClick"
+        android:layout_below="@+id/buttonCycling"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="@dimen/box_size_width"
+        android:layout_height="@dimen/box_size_hieght"
+        android:text="\n\nPlank"
+        android:id="@+id/buttonPlank"
+        android:onClick="onWorkoutButtonClick"
+        android:layout_below="@+id/buttonJumpingJacks"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="@dimen/box_size_width"
+        android:layout_height="@dimen/box_size_hieght"
+        android:text="\n\nJumping Jacks"
+        android:id="@+id/buttonJumpingJacks"
+        android:onClick="onWorkoutButtonClick"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="@dimen/box_size_width"
+        android:layout_height="@dimen/box_size_hieght"
+        android:text="\n\nPullup"
+        android:id="@+id/buttonPullup"
+        android:onClick="onWorkoutButtonClick"
+        android:layout_alignTop="@+id/buttonPushup"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="@dimen/box_size_width"
+        android:layout_height="@dimen/box_size_hieght"
+        android:text="\n\nCycling"
+        android:id="@+id/buttonCycling"
+        android:onClick="onWorkoutButtonClick" />
+
+    <Button
+        android:layout_width="@dimen/box_size_width"
+        android:layout_height="@dimen/box_size_hieght"
+        android:text="\n\nWalking"
+        android:id="@+id/buttonWalking"
+        android:onClick="onWorkoutButtonClick"
+        android:layout_below="@+id/buttonSquat"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"  />
+
+    <Button
+        android:layout_width="@dimen/box_size_width"
+        android:layout_height="@dimen/box_size_hieght"
+        android:text="\n\nJogging"
+        android:id="@+id/buttonJogging"
+        android:onClick="onWorkoutButtonClick"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/buttonJumpingJacks"
+        android:layout_toStartOf="@+id/buttonJumpingJacks" />
+
+    <Button
+        android:layout_width="@dimen/box_size_width"
+        android:layout_height="@dimen/box_size_hieght"
+        android:text="\n\nSwimming"
+        android:id="@+id/buttonSwimming"
+        android:onClick="onWorkoutButtonClick"
+        android:layout_toLeftOf="@+id/buttonWalking"
+        android:layout_toStartOf="@+id/buttonWalking"
+        android:layout_alignTop="@+id/buttonStairClimbing"/>
+
+    <Button
+        android:layout_width="@dimen/box_size_width"
+        android:layout_height="@dimen/box_size_hieght"
+        android:text="\n\nStair-Climbing"
+        android:id="@+id/buttonStairClimbing"
+        android:onClick="onWorkoutButtonClick"
+        android:layout_below="@+id/buttonSitup"
+        android:layout_alignParentLeft="true"  />
+
+    <TextView
+        android:layout_width="@dimen/box_size_width"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textViewActivity"
+        android:layout_below="@+id/textViewRepsMin"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center" />
+
+    <EditText
+        android:layout_width="@dimen/box_size_width"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editTextWeight"
+        android:hint="How many?"
+        android:layout_below="@+id/imageViewActivity"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:onClick="onWorkoutButtonClick"
+        android:text=" " />
+
+    <TextView
+        android:layout_width="@dimen/box_size_width"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="pounds"
+        android:id="@+id/textViewWeightUnits"
+        android:onClick="onWorkoutButtonClick"
+        android:layout_below="@+id/editTextWeight"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="@dimen/box_size_width"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Calories"
+        android:id="@+id/textViewCalories"
+        android:onClick="onWorkoutButtonClick"
+        android:layout_above="@+id/buttonSwimming"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center" />
+
+    <EditText
+        android:layout_width="@dimen/box_size_width"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editTextCalories"
+        android:textAlignment="center"
+        android:layout_above="@+id/textViewCalories"
+        android:layout_centerHorizontal="true"
+        android:text="Result"
+        android:onClick="onCaloriesEditTextUpdate" />
+
+    <ImageView
+        android:layout_width="@dimen/image_size"
+        android:layout_height="@dimen/image_size"
+        android:id="@+id/imageViewActivity"
+        android:src="@drawable/walking"
+        android:layout_below="@+id/textViewActivity"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
